@@ -11,8 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
             CombatUpdateMod.MOD_ID); //Stores the items for registering
 
-    public static final RegistryObject<Item> NAME = ITEMS.register("name",
-            () -> new Item(new Item.Properties()));
+    //public static final RegistryObject<Item> NAME = ITEMS.register("name", () -> new Item(new Item.Properties()));
 
 
 

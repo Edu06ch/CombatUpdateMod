@@ -1,6 +1,8 @@
 package net.chris.combatupdatemod;
 
 import com.mojang.logging.LogUtils;
+import net.chris.combatupdatemod.block.ModBlocks;
+import net.chris.combatupdatemod.item.ModCreativeModTabs;
 import net.chris.combatupdatemod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,6 +28,8 @@ public class CombatUpdateMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
